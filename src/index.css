@@ -11,3 +11,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.container {
+  display: flex;
+  flex-direction: column; /* мобильные устройства: колонка */
+  gap: 20px; /* промежутки между элементами, по желанию */
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row; /* на планшетах и десктопах — в строку */
+    flex-wrap: wrap; /* если нужно переносить блоки */
+  }
+}
+
+
+.header {
+  /* например, горизонтальный логотип и меню */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+  }
+}
+.layout {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "main sidebar"
+    "footer footer";
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
+}
