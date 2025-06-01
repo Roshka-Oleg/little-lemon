@@ -1,11 +1,15 @@
-import React from 'react';
+import React from "react";
 
-function Footer() {
-  return (
-    <footer>
-      <p>&copy; 2024 Little Lemon. All rights reserved.</p>
-    </footer>
-  );
+const ConfirmedBooking = () => {
+    return(
+        <header>
+            <section>
+            <h1>Booking has been confirmed!
+        </h1>
+            </section>
+        </header>
+
+    )
 }
 
-export default Footer;
+export default ConfirmedBooking;
