@@ -1,10 +1,9 @@
 import React from 'react';
 import './App.css';
-import Nav from "./components/Nav"
-import Header from "./components/Header"
-import Main from "./components/Main"
-import Footer from "./components/Footer"
-
+import Nav from './Components/Nav.js'
+import Header from './Components/Header.js'
+import Main from './Components/Main.js'
+import Footer from './Components/Footer.js'
 function App() {
   return (
     <div>
