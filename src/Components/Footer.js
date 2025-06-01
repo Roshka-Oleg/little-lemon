@@ -1,11 +1,11 @@
-import React from 'react';
+import react from "react";
 
-function Footer() {
-  return (
-    <footer>
-      <p>&copy; 2024 Little Lemon. All rights reserved.</p>
-    </footer>
-  );
+function Header(){
+    return(
+       <header>
+      <img src="path/to/logo.png" alt="Little Lemon Logo" />
+
+       </header>
+    );
 }
-
-export default Footer;
+export default Header;
