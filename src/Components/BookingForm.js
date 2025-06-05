@@ -2,7 +2,6 @@ import React from "react";
 import { useState } from "react";
 import './BookingForm.css';
 
-
 const BookingForm = (props) => {
 
    const [occasion, setOccasion] = useState("");
@@ -26,6 +25,7 @@ const BookingForm = (props) => {
         <form onSubmit={handleSumbit} className="booking-form"> 
           <fieldset>
             <div>
+              <h2>Reserve Table</h2>
               <label htmlFor="book-date">Choose Date</label>
               <input id="book-date" value={date} onChange={(e) => handleChange(e.target.value)} type="date" required/>
             </div>
@@ -51,6 +51,7 @@ const BookingForm = (props) => {
             <div>
               <input aria-label="On Click" type={"submit"} value={"Make Your Reservation"}></input>
             </div>
+
           </fieldset>
         </form>
       </section>
