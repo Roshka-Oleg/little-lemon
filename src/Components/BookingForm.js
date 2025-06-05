@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-
+import './BookingForm.css';
 
 
 const BookingForm = (props) => {
@@ -22,8 +22,8 @@ const BookingForm = (props) => {
 
   return (
     <header>
-      <section>
-        <form onSubmit={handleSumbit}>
+       <section className="form-image-container">
+        <form onSubmit={handleSumbit} className="booking-form"> 
           <fieldset>
             <div>
               <label htmlFor="book-date">Choose Date</label>
